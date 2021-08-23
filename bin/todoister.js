@@ -31,12 +31,16 @@ program
                 })
                 .then(({ status, data }) => {
                     if (status === 200) {
-                        process.stdout.write('SUCCESS\n');
+                        process.stdout.write('SUCCESS');
                     } else {
-                        process.stderr.write(`FAILED ${status}\n`);
+                        process.stdout.write(`Status code ${status}`);
+                        process.exitCode = 1;
                     }
                 })
-                .catch((e) => process.stderr.write(e.message));
+                .catch((e) => {
+                    process.stdout.write(e.message);
+                    process.exitCode = 1;
+                });
     })
     .command('tags', 'Показывает список тегов', { executableFile: 'tags' });
 
