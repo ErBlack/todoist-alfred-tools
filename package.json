@@ -1,0 +1,35 @@
+{
+  "name": "todoister",
+  "version": "1.0.0",
+  "description": "Toto script for alfred",
+  "main": "bin/todoister.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ErBlack/todoister.git"
+  },
+  "keywords": [
+    "todo",
+    "todoist",
+    "alfred"
+  ],
+  "bin": {
+    "todoister": "./bin/todoister.js"
+  },
+  "author": "ErBlack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErBlack/todoister/issues"
+  },
+  "homepage": "https://github.com/ErBlack/todoister#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "commander": "^8.0.0",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
