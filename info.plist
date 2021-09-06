@@ -317,14 +317,14 @@
 				<false/>
 				<key>variables</key>
 				<dict>
-					<key>project</key>
+					<key>content</key>
 					<string>{query}</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>6A304DCF-ACFD-42E2-A203-D27A6940D8CA</string>
+			<string>5918CACD-0EC0-49EA-A443-48F84B07EEAA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -337,14 +337,14 @@
 				<false/>
 				<key>variables</key>
 				<dict>
-					<key>content</key>
+					<key>project</key>
 					<string>{query}</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>5918CACD-0EC0-49EA-A443-48F84B07EEAA</string>
+			<string>6A304DCF-ACFD-42E2-A203-D27A6940D8CA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -514,6 +514,26 @@ tag: {var:tag}
 				<false/>
 				<key>variables</key>
 				<dict>
+					<key>content</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>25DAF1D0-AD25-41A0-8A43-53E7197EC7FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
 					<key>project</key>
 					<string>2213071181</string>
 					<key>tag</key>
@@ -530,26 +550,6 @@ tag: {var:tag}
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>content</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>25DAF1D0-AD25-41A0-8A43-53E7197EC7FA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -559,7 +559,7 @@ tag: {var:tag}
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>👎 Не удалось добавить задачу</string>
+				<string>🚨 Не удалось добавить задачу</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -658,7 +658,7 @@ Type your keyword into Alfred, followed by your input text if needed, and you'll
 		<key>0497652F-244E-422B-A223-4633FF2A8C4F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>350</integer>
+			<integer>320</integer>
 			<key>ypos</key>
 			<integer>710</integer>
 		</dict>
@@ -730,7 +730,7 @@ Type your keyword into Alfred, followed by your input text if needed, and you'll
 		<key>70ADBC50-D222-44B6-A604-92A79379A8C6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>590</integer>
+			<integer>320</integer>
 			<key>ypos</key>
 			<integer>550</integer>
 		</dict>
