@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/ErBlack/todoister#readme",
   "dependencies": {
+    "@doist/todoist-api-typescript": "^2.1.2",
     "axios": "^0.21.1",
     "commander": "^8.0.0",
     "dotenv": "^10.0.0"
