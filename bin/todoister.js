@@ -42,6 +42,7 @@ program
                     process.exitCode = 1;
                 });
     })
-    .command('tags', 'Показывает список тегов', { executableFile: 'tags' });
+    .command('tags', 'Показывает список тегов', { executableFile: 'tags' })
+    .command('synctoday', 'Write today tasks to today file', { executableFile: 'syncToday' });
 
 program.parse(process.argv);

@@ -16,7 +16,8 @@
     "alfred"
   ],
   "bin": {
-    "todoister": "./bin/todoister.js"
+    "todoister": "./bin/todoister.js",
+    "sycntoday": "./bin/syncToday.js"
   },
   "author": "ErBlack",
   "license": "ISC",
@@ -30,6 +31,6 @@
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
-    "prettier": "^2.3.2"
+    "prettier": "^2.8.8"
   }
 }

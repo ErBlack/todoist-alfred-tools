@@ -8,11 +8,11 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>25DAF1D0-AD25-41A0-8A43-53E7197EC7FA</key>
+		<key>2CC00875-52B0-405F-9DBC-57F11BD17804</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5D7BA7C5-57A9-4397-95BC-E25D10DD2E5B</string>
+				<string>8AAF6207-6D8A-4FBD-BFCC-B76732C78C01</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -70,32 +70,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>5D7BA7C5-57A9-4397-95BC-E25D10DD2E5B</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>6078F05C-C11B-4F11-B4EB-1EEFEDCAE29C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>6078F05C-C11B-4F11-B4EB-1EEFEDCAE29C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2CDB4800-2D26-411E-9B21-8707DDCDF233</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>62459BD4-E864-4ADB-A498-3D1839B0FA16</key>
 		<array>
 			<dict>
@@ -127,19 +101,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>2CDB4800-2D26-411E-9B21-8707DDCDF233</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>835E78EE-BDF4-4F9C-AF71-25BC04EFEE24</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>25DAF1D0-AD25-41A0-8A43-53E7197EC7FA</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -292,6 +253,8 @@
 				<false/>
 				<key>items</key>
 				<string>[{"imagefile":"6a2b8d70302ed66779210071e0c7def7f6e3de7b.png","title":"Work","arg":"2213071181","subtitle":"Работа"},{"imagefile":"6935c111301fa66a119ef1da2e1b8e7e4ccde36f.png","title":"Life","arg":"2254947727","subtitle":"Жизнь"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>subtext</key>
@@ -377,7 +340,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>source ~/.bash_profile
+				<string>source ~/.zprofile
 
 ./bin/todoister.js -p "$project" -c "`./bin/prepareContent.js`" -d today -t ${tag}</string>
 				<key>scriptargtype</key>
@@ -449,6 +412,8 @@ tag: {var:tag}
 				</array>
 				<key>elselabel</key>
 				<string>👎</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -460,90 +425,48 @@ tag: {var:tag}
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>fixedorder</key>
+				<key>concurrently</key>
 				<false/>
-				<key>items</key>
-				<string>[{"title":"atreger","arg":"2156694453","subtitle":""},{"title":"plotnikov-ep","arg":"2156694895","subtitle":""},{"title":"utterstep","arg":"2156695077","subtitle":""},{"title":"lastenlol","arg":"2156786603","subtitle":""},{"title":"fgsfds","arg":"2157339951","subtitle":""},{"title":"mkopylov19","arg":"2157018138","subtitle":""},{"title":"midyac","arg":"2157018627","subtitle":""},{"title":"alexkuzn","arg":"2157050964","subtitle":""},{"title":"pushkinss","arg":"2157361786","subtitle":""},{"title":"svipy","arg":"2157483331"}]</string>
-				<key>runningsubtext</key>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>source ~/.zprofile
+
+echo start
+
+./bin/todoister.js synctoday -f "/Users/ertema/Yandex.Disk.localized/Lambda/daily/$(date +"%Y-%m-%d").md"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Обсудить с</string>
-				<key>withspace</key>
-				<true/>
+				<key>type</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>5D7BA7C5-57A9-4397-95BC-E25D10DD2E5B</string>
+			<string>8AAF6207-6D8A-4FBD-BFCC-B76732C78C01</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>keyword</key>
-				<string>talk</string>
+				<string>tds</string>
 				<key>subtext</key>
 				<string></string>
 				<key>text</key>
-				<string>Обсудить</string>
+				<string>Sync today tasks</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
-			<string>835E78EE-BDF4-4F9C-AF71-25BC04EFEE24</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>content</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>25DAF1D0-AD25-41A0-8A43-53E7197EC7FA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>project</key>
-					<string>2213071181</string>
-					<key>tag</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>6078F05C-C11B-4F11-B4EB-1EEFEDCAE29C</string>
+			<string>2CC00875-52B0-405F-9DBC-57F11BD17804</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -658,116 +581,102 @@ Type your keyword into Alfred, followed by your input text if needed, and you'll
 		<key>0497652F-244E-422B-A223-4633FF2A8C4F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>320</integer>
+			<real>320</real>
 			<key>ypos</key>
-			<integer>710</integer>
+			<real>710</real>
 		</dict>
-		<key>25DAF1D0-AD25-41A0-8A43-53E7197EC7FA</key>
+		<key>2CC00875-52B0-405F-9DBC-57F11BD17804</key>
 		<dict>
 			<key>xpos</key>
-			<integer>255</integer>
+			<real>75</real>
 			<key>ypos</key>
-			<integer>430</integer>
+			<real>410</real>
 		</dict>
 		<key>2CDB4800-2D26-411E-9B21-8707DDCDF233</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<real>700</real>
 			<key>ypos</key>
-			<integer>310</integer>
+			<real>310</real>
 		</dict>
 		<key>3E554F3A-9D95-4D8B-9797-FDE6FDA14DCD</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>4</integer>
 			<key>xpos</key>
-			<integer>75</integer>
+			<real>75</real>
 			<key>ypos</key>
-			<integer>275</integer>
+			<real>275</real>
 		</dict>
 		<key>5918CACD-0EC0-49EA-A443-48F84B07EEAA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>255</integer>
+			<real>255</real>
 			<key>ypos</key>
-			<integer>250</integer>
-		</dict>
-		<key>5D7BA7C5-57A9-4397-95BC-E25D10DD2E5B</key>
-		<dict>
-			<key>xpos</key>
-			<integer>320</integer>
-			<key>ypos</key>
-			<integer>400</integer>
-		</dict>
-		<key>6078F05C-C11B-4F11-B4EB-1EEFEDCAE29C</key>
-		<dict>
-			<key>xpos</key>
-			<integer>485</integer>
-			<key>ypos</key>
-			<integer>430</integer>
+			<real>250</real>
 		</dict>
 		<key>62459BD4-E864-4ADB-A498-3D1839B0FA16</key>
 		<dict>
 			<key>xpos</key>
-			<integer>75</integer>
+			<real>75</real>
 			<key>ypos</key>
-			<integer>550</integer>
+			<real>550</real>
 		</dict>
 		<key>625E6904-A8C5-4062-9AD9-A39A97E0D1F0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>75</integer>
+			<real>75</real>
 			<key>ypos</key>
-			<integer>155</integer>
+			<real>155</real>
 		</dict>
 		<key>6A304DCF-ACFD-42E2-A203-D27A6940D8CA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>490</integer>
+			<real>490</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>250</real>
 		</dict>
 		<key>70ADBC50-D222-44B6-A604-92A79379A8C6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>320</integer>
+			<real>320</real>
 			<key>ypos</key>
-			<integer>550</integer>
+			<real>550</real>
 		</dict>
-		<key>835E78EE-BDF4-4F9C-AF71-25BC04EFEE24</key>
+		<key>8AAF6207-6D8A-4FBD-BFCC-B76732C78C01</key>
 		<dict>
 			<key>xpos</key>
-			<integer>75</integer>
+			<real>320</real>
 			<key>ypos</key>
-			<integer>400</integer>
+			<real>410</real>
 		</dict>
 		<key>8C2D2EA8-ABB3-4BB1-99F9-E96936CF717F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>320</integer>
+			<real>320</real>
 			<key>ypos</key>
-			<integer>220</integer>
+			<real>220</real>
 		</dict>
 		<key>91B0F638-BA11-4AA4-A9C6-9E6DF10FB019</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1090</integer>
+			<real>1090</real>
 			<key>ypos</key>
-			<integer>455</integer>
+			<real>455</real>
 		</dict>
 		<key>AABFEAC6-9259-40A2-AE98-57056554B220</key>
 		<dict>
 			<key>xpos</key>
-			<integer>915</integer>
+			<real>915</real>
 			<key>ypos</key>
-			<integer>330</integer>
+			<real>330</real>
 		</dict>
 		<key>BBA951A2-E652-4182-A868-DA12DF063E12</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1090</integer>
+			<real>1090</real>
 			<key>ypos</key>
-			<integer>190</integer>
+			<real>190</real>
 		</dict>
 		<key>C385C973-AE7B-4C75-9304-ECA4C7755F15</key>
 		<dict>
@@ -776,25 +685,27 @@ Type your keyword into Alfred, followed by your input text if needed, and you'll
 			<key>note</key>
 			<string>Debug output</string>
 			<key>xpos</key>
-			<integer>935</integer>
+			<real>935</real>
 			<key>ypos</key>
-			<integer>165</integer>
+			<real>165</real>
 		</dict>
 		<key>E1184C47-CAAA-4141-A34F-189D48D7B82E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1090</integer>
+			<real>1090</real>
 			<key>ypos</key>
-			<integer>325</integer>
+			<real>325</real>
 		</dict>
 		<key>F857A44F-ABC3-4C16-94B6-12952E12F111</key>
 		<dict>
 			<key>xpos</key>
-			<integer>75</integer>
+			<real>75</real>
 			<key>ypos</key>
-			<integer>710</integer>
+			<real>710</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
